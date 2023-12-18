@@ -4,7 +4,9 @@ from Crypto.Cipher import AES as _AES
 # 使用前安装依赖
 # pip install requests
 # pip install  pycryptodome
-
+# 心动网络 貌似与知乎一样的系统 因为我还没断点 就触发了之前的断点 如下json格式
+# https://hr.xd.cn/api/outer/ats-jc-apply/website/jobs
+# {"limit":15,"offset":0,"zhinengId":"54006","siteId":25045,"orgId":"xd","site":"social","needStat":true}
 def aes_decrypt(content: str, key=None, IV=None):
     cipher = _AES.new(key, _AES.MODE_CBC, IV)
     content = base64.b64decode(content)
