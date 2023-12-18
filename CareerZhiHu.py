@@ -24,3 +24,4 @@ AES_IV = "de7c21ed8d6f50fe".encode('utf-8')
 dec_data = aes_decrypt(base64Data, AES_KEY, AES_IV)
 # 128 CBC MODE 
 print(dec_data)
+#dec_data并不能直接解析json 因为后面存在填充数据 需要先行去掉尾部填充数据
