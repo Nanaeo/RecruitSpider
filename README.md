@@ -6,3 +6,5 @@
 - [x] Alibaba
 - [x] CaiNiao
 - [x] 知乎
+- [x] 美团
+- [x] 字节 
