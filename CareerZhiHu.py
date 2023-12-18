@@ -1,7 +1,9 @@
 import base64
 import requests
 from Crypto.Cipher import AES as _AES
-
+# 使用前安装依赖
+# pip install requests
+# pip install  pycryptodome
 
 def aes_decrypt(content: str, key=None, IV=None):
     cipher = _AES.new(key, _AES.MODE_CBC, IV)
